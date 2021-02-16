@@ -55,7 +55,8 @@ public class Compilateur {
     void expression () :
     {}
     { terme() (
-        "+" terme()
+        "/" terme()
+        | "+" terme()
         | "-" terme()
     )*
     }
